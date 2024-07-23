@@ -15,6 +15,9 @@ function grade(homework: number, midterm: number, final: number) { //function �
     } else {
         return 'ผ่าน'
     }
+    */
+
+   /* 
    if (score > 100) {
         return 'Error' 
    } else if (score >= 80) {
@@ -31,14 +34,30 @@ function grade(homework: number, midterm: number, final: number) { //function �
         return 'Error'
    }
         
+        
     if (score < 0) {
         return 'Error'
     } else if (score === 0 && score <=49) {
         return '0'
     } else if (score === 50 && score <= 54) {
         return 'D'
+    } else if (score === 55 && score <= 59) {
+        return 'D+'
+    } else if (score === 60 && score <= 64) {
+        return 'C'
+    } else if (score === 65 && score <=69) {
+        return 'C+'
+    } else if (score === 70 && score <= 74) {
+        return 'B'
+    } else if (score === 75 && score <= 79) {
+        return 'B+'
+    } else if (score === 80 && score <= 100) {
+        return 'A'
+    } else {
+        return 'Error'
     }
         */
+       
        if (score < 50) {
             return 'F'
        } else if (score < 60) {
