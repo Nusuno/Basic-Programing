@@ -10,14 +10,14 @@ function multiply(x: number, y: number, z: number) { //function การคู�
 
 function grade(homework: number, midterm: number, final: number) { //function คิดคำนวณ grade รับค่าคะแนนจาก homework, midterm, final รวมกัน (homework + midterm + final)
     let score: number = homework + midterm + final
-    /*if (score < 50) {
+/*    if (score < 50) {
         return 'ตก'
     } else {
         return 'ผ่าน'
     }
-    */
+    
 
-   /* 
+   
    if (score > 100) {
         return 'Error' 
    } else if (score >= 80) {
@@ -56,8 +56,8 @@ function grade(homework: number, midterm: number, final: number) { //function �
     } else {
         return 'Error'
     }
-        */
-       
+       */
+      
        if (score < 50) {
             return 'F'
        } else if (score < 60) {
@@ -68,6 +68,8 @@ function grade(homework: number, midterm: number, final: number) { //function �
             return 'B'
        } else if (score < 100) {
             return 'A'
+       } else {
+            return 'Error'
        }
 }
 
