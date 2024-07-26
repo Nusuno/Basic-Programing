@@ -30,6 +30,9 @@ function test(gender: string , height: number , w: number) {
     }
 }
 
+function Test(h: number, w: number) {
+    let BMI: number = (w / (h * h))
+}
 
 // function test(gender: string , height: number) {
 //     if (gender === 'male' && height > 170) {
@@ -46,4 +49,5 @@ function test(gender: string , height: number , w: number) {
 // secondHello('Nusuno')
 // console.log (getPi())
 //start('nan' , 'pleum' , 'yo')
-test('male' , 170 , 68) 
+//test('male' , 170 , 68)
+console.log (Test(174,66))
