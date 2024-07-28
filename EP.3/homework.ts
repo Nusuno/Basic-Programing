@@ -18,4 +18,4 @@ function BMI(h: number, w: number) {
     
 }
 
-console.log(BMI(1.74,90))
+console.log(BMI(1.74,66))
