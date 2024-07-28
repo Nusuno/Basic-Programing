@@ -1,5 +1,5 @@
 function BMI(h: number, w: number) {
-    let score(w / (h * h))
+    let score: number = (w / (h * h))
 }
 
-score(1.74 , 66)
+console.log(score(1.74,66))
