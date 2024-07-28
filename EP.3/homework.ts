@@ -1,1 +1,1 @@
-function BMI: 
+function BMI(h: number, w: number)
