@@ -4,7 +4,7 @@ function BMI(height: number, weight: number) {
     let score: number = weight / (height * height) //สูตรการคำนวณ BMI น้ำหนักตัว / ส่วนสูง(เมตร) กำลัง 2
 
 
-//สร้าง เงื่อนไข ในการคำนวนค่า BMI
+//สร้าง เงื่อนไข ในการคำนวณค่า BMI
 // \n ใช้เพื่อ ขึ้นบรรทัดใหม่
 
     if (score < 18.50) {
