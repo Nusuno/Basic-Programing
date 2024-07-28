@@ -1,8 +1,11 @@
-const a: string = '\nอยู่ในเกณฑ์\n'
-const b: string = 'ภาวะเสี่ยงต่อโรค\n'
+const a: string = '\nอยู่ในเกณฑ์\n' //สร้างขึ้นเพื่อบอกหัวข้อ เกณฑ์
+const b: string = 'ภาวะเสี่ยงต่อโรค\n' //สร้างขึ้นเพื่อบอกหัวข้อ ภาวะเสี่ยงต่อโรค
 function BMI(h: number, w: number) {
-    let score: number = w / (h * h)
+    let score: number = w / (h * h) //สูตรการคำนวณ BMI น้ำหนักตัว / ส่วนสูง(เมตร) กำลัง 2
 
+
+//สร้าง เงื่อนไข ในการคำนวนค่า BMI
+// \n ใช้เพื่อ ขึ้นบรรทัดใหม่
 
     if (score < 18.50) {
         return a + 'น้ำหนักน้อย / ผอม\n\n' + b + 'มากกว่าคนปกติ'
@@ -18,4 +21,4 @@ function BMI(h: number, w: number) {
     
 }
 
-console.log(BMI(1.74,66))
+console.log(BMI(1.74,66)) //สั่งพิมพ์ function BMI และใส่ค่า h เป็น 1.74 เมตร (หรือ 174 ซม.) และ w เป็น 66 กิโลกรัม
