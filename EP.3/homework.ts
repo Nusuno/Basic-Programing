@@ -1,7 +1,7 @@
 const a: string = '\nอยู่ในเกณฑ์\n' //สร้างขึ้นเพื่อบอกหัวข้อ เกณฑ์
 const b: string = 'ภาวะเสี่ยงต่อโรค\n' //สร้างขึ้นเพื่อบอกหัวข้อ ภาวะเสี่ยงต่อโรค
 function BMI(height: number, weight: number) {
-    let score: number = weight / (height * height) //สูตรการคำนวณ BMI น้ำหนักตัว / ส่วนสูง(เมตร) กำลัง 2
+    const score: number = weight / (height * height) //สูตรการคำนวณ BMI น้ำหนักตัว / ส่วนสูง(เมตร) กำลัง 2
 
 
 // สร้าง เงื่อนไข ในการคำนวณค่า BMI
