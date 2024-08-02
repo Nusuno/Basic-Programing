@@ -130,4 +130,33 @@ function localeString(n: number) {
     return x
 }
 
-console.log(localeString(99999999999999999999))
+// console.log(localeString(99999999999999999999))
+
+// const str: string = 'Hello' 
+
+// console.log(str.length) //ใช้สำหรับหาจำนวน char หรือจำนวนตัวอักษรของ string
+
+// const str: string = 'Nuttawut' 
+
+// console.log(str.charAt(0)) //ใช้สำหรับดึงตัวอักษรออกมาจากแต่ละตำแหน่ง เริ่มนับจาก 0..1..2.....n
+
+// const str: string = 'Test Test Test Test GGEZ'
+// console.log(str.charAt(str.length - 1)) //Combo ดึงตัวอักษรตัวสุดท้ายด้วยวิธีหาจำนวนตัวอักษรก่อนแล้วเอามาลบด้วย 1 จึงค่อยดึกตัวนั้นออกมา
+
+// const str: string = '     Test Test Test Test GGEZ      '
+// console.log(str.trimStart()) //คำสั่งเอาช่องว่างด้านหน้าออก
+
+// const str: string = '     Test Test Test Test GGEZ      '
+// console.log(str.trimEnd())  //คำสั่งเอาช่องว่างด้านหลังออก
+
+// const str: string = '     Test Test Test Test GGEZ      '
+// console.log(str.trim())     //คำสั่งเอาช่องว่างทั้งด้านหน้าและหลังออก
+
+// const str: string = 'nuttawut'
+// console.log(str.toUpperCase()) //เปลี่ยนตัวอักษรให้เป็นพิมพ์ใหญ่
+
+// const str: string = 'NUTTAWUT'
+// console.log(str.toLowerCase()) //เปลี่ยนตัวอักษรให้เป็นพิมพ์เล็ก
+
+// const str: string = 'Nuttawut'
+// console.log(str.indexOf('t')) //คำสั่งหาว่าตัวอักษรตัวนั้น ๆ อยู่ตำแหน่งที่เท่าไหร่
