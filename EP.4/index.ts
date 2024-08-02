@@ -55,28 +55,28 @@ function sayHi(dayOfWeek: number) {
 // sayHi(8)
 
 function gotBMI(height: number, weight: number) {
-        const bmi = weight / (height ** 2)
+    const bmi = weight / (height ** 2)
 
-        switch (true) {
-            default:
-                console.log('Error')
-                break
-            case bmi < 18.50:
-                console.log('น้ำหนักน้อย')
-                break
-            case bmi >= 18.50 && bmi <= 22.90:
-                console.log('ปกติ')
-                break
-            case bmi >= 23 && bmi <= 24.90:
-                console.log('อ้วนระดับ 1')
-                break
-            case bmi >= 25 && bmi <= 29.90:
-                console.log('อ้วนระดับ 2')
-                break
-            case bmi >= 30:
-                console.log('อ้วนระดับ 3')
-                break
-        }
+    switch (true) {
+        default:
+            console.log('Error')
+            break
+        case bmi < 18.50:
+            console.log('น้ำหนักน้อย')
+            break
+        case bmi >= 18.50 && bmi <= 22.90:
+            console.log('ปกติ')
+            break
+        case bmi >= 23 && bmi <= 24.90:
+            console.log('อ้วนระดับ 1')
+            break
+        case bmi >= 25 && bmi <= 29.90:
+            console.log('อ้วนระดับ 2')
+            break
+        case bmi >= 30:
+            console.log('อ้วนระดับ 3')
+            break
+    }
 }
 
 // gotBMI(1.74,66)
@@ -84,14 +84,50 @@ function gotBMI(height: number, weight: number) {
 
 
 //Number
-// const x: number = 999999999999999
-// const y: number = 9999999999999999
-// console.log('x = ' + x)
-// console.log('y = ' + y)
+const a: number = 999999999999999
+const b: number = 9999999999999999
+// console.log('a = ' + a)
+// console.log('b = ' + b)
 
-// const z: number = 0.1 + 0.2
-// console.log(z)
+const c: number = 0.1 + 0.2
+// console.log(c)
 
-const x: number = 41
-const y: number = 46.0
-console.log(x+y)
+const d: number = 46
+// console.log(d.toString()) // เปลี่ยนจาก Number เป็น String
+
+const e: number = 46.0
+// console.log(e.toFixed(3)) //ปรับทศนิยมเป็น 3 ตำแหน่ง และปัดเศษให้ถ้าเกิน 0.5 **แต่ number จะเปลี่ยนเป็น string** (เปลี่ยนใน () เพื่อเปลี่ยน)
+
+const f: number = 10000
+// console.log(f.toLocaleString()) //เปลี่ยนเลข ให้มีเครื่องหมายบอกจำนวนหลัก (,) เช่น 10000 = 10,000 **แต่ number จะเปลี่ยนเป็น string**
+
+const g: string = '45'
+// console.log(Number(g)) //เปลี่ยนจาก String เป็น Number
+
+const h: number = 45
+// console.log(Number(h.toFixed(3))) //Combo เป็นจาก Number 0 ตำแหน่ง เป็น 3 ตำแหน่งที่เป็น String และเปลี่ยนให้เป็น Number
+
+const i: number = 45
+// console.log(parseFloat('45.55')) //เปลี่ยน int เป็น float
+
+const j: number = 45.55
+// console.log(parseInt('45')) //เปลี่ยน float เป็น int
+
+
+//Test
+
+function fixdeDecimal(n: number, digti: number) {
+
+    const x = n.toFixed(digti)
+    return x
+}
+
+// console.log(fixdeDecimal(50.5,6))
+
+
+function localeString(n: number) {
+    const x = n.toLocaleString()
+    return x
+}
+
+console.log(localeString(99999999999999999999))
