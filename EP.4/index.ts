@@ -84,3 +84,14 @@ function gotBMI(height: number, weight: number) {
 
 
 //Number
+// const x: number = 999999999999999
+// const y: number = 9999999999999999
+// console.log('x = ' + x)
+// console.log('y = ' + y)
+
+// const z: number = 0.1 + 0.2
+// console.log(z)
+
+const x: number = 41
+const y: number = 46.0
+console.log(x+y)
