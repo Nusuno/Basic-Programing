@@ -4,7 +4,7 @@ function BMI(height: number, weight: number) {
     let score: number = weight / (height * height) //สูตรการคำนวณ BMI น้ำหนักตัว / ส่วนสูง(เมตร) กำลัง 2
 
 
-//สร้าง เงื่อนไข ในการคำนวณค่า BMI
+// สร้าง เงื่อนไข ในการคำนวณค่า BMI
 // \n ใช้เพื่อ ขึ้นบรรทัดใหม่
 
     if (score < 18.50) {
@@ -17,8 +17,9 @@ function BMI(height: number, weight: number) {
         return a + 'อ้วน / โรคอ้วนระดับ 2\n\n' + b + 'อันครายระดับ 2'    //return ค่ากลับออกมาบอกว่า อยู่ในเกณฑ์ไหน และมีภาวะเสี่ยงต่อโรคเท่าไหร่
     } else if (score >= 30) {
         return a + 'อ้วนมาก / โรคอ้วนระดับ 3\n\n' + b + 'อันครายระดับ 3' //return ค่ากลับออกมาบอกว่า อยู่ในเกณฑ์ไหน และมีภาวะเสี่ยงต่อโรคเท่าไหร่
-    } return
+    } return 
     
 }
+
 
 console.log(BMI(1.74,66)) //สั่งใช้งาน function BMI และใส่ค่า height เป็น 1.74 เมตร (หรือ 174 ซม.) และ weight เป็น 66 กิโลกรัม.
