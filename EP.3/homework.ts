@@ -21,4 +21,4 @@ function BMI(height: number, weight: number) {
     
 }
 
-console.log(BMI(1.74,66)) //สั่งใช้งาน function BMI และใส่ค่า height เป็น 1.74 เมตร (หรือ 174 ซม.) และ weight เป็น 66 กิโลกรัม
+console.log(BMI(1.74,66)) //สั่งใช้งาน function BMI และใส่ค่า height เป็น 1.74 เมตร (หรือ 174 ซม.) และ weight เป็น 66 กิโลกรัม.
