@@ -160,3 +160,5 @@ function localeString(n: number) {
 
 // const str: string = 'Nuttawut'
 // console.log(str.indexOf('t')) //คำสั่งหาว่าตัวอักษรตัวนั้น ๆ อยู่ตำแหน่งที่เท่าไหร่
+
+//console.log(str.slice)
