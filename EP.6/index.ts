@@ -9,3 +9,4 @@ const aNameArray = aName.split('*')
 aNameArray.pop()
 aNameArray.push('cow')
 console.log(aNameArray)
+
