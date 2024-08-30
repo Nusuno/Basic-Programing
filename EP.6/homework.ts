@@ -5,9 +5,9 @@ const personalInformation = {
     road: 'ลื่นไหล',
     Subdistrict: 'น้ำตก',
     district: 'อัมพรรณ',
-    province: 'กำแพงเพชร',
+    province: 'หัวร้อน',
     zipCode: '11101001',
-    telePhone: '0987654321',
-    phone: '0987654321',
-    email: 'timestone@gmail.com',
+    telePhone: '0*7654321',
+    phone: '9876543*21',
+    email: 'timestone@f.uc',
 }
