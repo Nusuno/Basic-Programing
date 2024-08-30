@@ -24,6 +24,15 @@
 // console.log(aNameArray.slice(0,2)) 
 
 //EX
-const fruits =["Banana", "Orange", "Apple", "Mango"]
-console.log(fruits.sort())
-console.log(fruits.reverse())
+// const fruits =["Banana", "Orange", "Apple", "Mango"]
+// console.log(fruits.sort()) //เรียงลำดับ A-Z
+// console.log(fruits.reverse()) //เรียงลำดับ Z-A
+
+
+//Java Script Object
+// me = Java Script Object
+const me = {
+    firstName: 'Nuttawut' , 
+    lastName: 'Chairit' , 
+    age: 20
+}
