@@ -981,3 +981,4 @@ const dataBaseFilterMap = dataBase.filter(function (elemant, index) {
 })
 
 // console.log(dataBaseFilterMap)
+
