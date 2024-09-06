@@ -949,16 +949,33 @@ const dataBase = [
     }
 ]
 
-
-const dataBaseDeath = dataBase.filter(function (elemant, index) {
+//ใช้ Method filter()
+const dataBaseFilter = dataBase.filter(function (elemant, index) {
     return elemant.total_death > 5 && elemant.province !== 'ทั้งประเทศ'
 })
 
-console.log(dataBaseDeath)
+// console.log(dataBaseFilter)
 
+
+//ใช้ Method map()
 const dataBaseMap = dataBase.map(function (elemant, index) {
     return ({
         province: elemant.province,
         total_death: elemant.total_death
     })
 })
+
+// console.log(dataBaseMap)
+
+
+//ใช้ Method filter() && map() พร้อมกัน
+const dataBaseFilterMap = dataBase.filter(function (elemant, index) {
+    return elemant.total_death > 5 && elemant.province !== 'ทั้งประเทศ'
+}) .map(function(elemant, index){
+    return ({
+        province: elemant.province,
+        total_death: elemant.total_death
+    })
+})
+
+console.log(dataBaseFilterMap)
