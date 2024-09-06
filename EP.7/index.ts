@@ -125,6 +125,12 @@ const ideal = [{
 }
 ]
 
+
+
+//Method
+//Map() การสร้างตัว Array ใหม่โดยที่ตัดข้อมูลบางตัวออก กำหนด element หรือตัวแปรที่จะยังคงเหลือไว้
+//filter
+
 const friendArray = [{
     fullName: 'นายสมปอง สนองบุญ',
     address: '123/4',
@@ -150,7 +156,7 @@ const friendArray = [{
     phone: '9876543*21',
     email: 'timestone@f.uc'
 }, {
-    fullName: 'นายสมควร มวนมวน',
+    fullName: 'นายสมควร มวนหลายหลาย',
     address: '123/4',
     moo: '5',
     road: 'ลื่นไหล',
@@ -164,15 +170,13 @@ const friendArray = [{
 },
 ]
 
-//Method
-//Map() การสร้างตัว Array ใหม่โดยที่ตัดข้อมูลบางตัวออก กำหนด element หรือตัวแปรที่จะยังคงเหลือไว้
-//filter
-
 //การใช้ Method map()
-const  friendArrayPhoneNumber = friendArray.map(function(elemant, index){
+const  friendArrayPhoneNumber = friendArray.map(function(elemant, index){ //การใช้ map() จะมีการกำหนดค่าตายตัวคือ map(function(elemant, index))
     return ({
-        fristName : elemant.fullName,
-        lastName : elemant.fullName,
+        fullName : elemant.fullName,
+        email : elemant.email,
         phone: elemant.phone
     })
 })
+
+console.log(friendArrayPhoneNumber)
