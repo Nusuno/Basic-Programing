@@ -1,5 +1,5 @@
 const personalInformation = {
-    fullName: 'นายสมมุติ สุดหล่อ',
+    fullName: 'นายสมปอง สนองบุญ',
     address: '123/4',
     moo: '5',
     road: 'ลื่นไหล',
