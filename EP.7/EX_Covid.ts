@@ -980,4 +980,4 @@ const dataBaseFilterMap = dataBase.filter(function (elemant, index) {
     return elemant.province.includes('กรุง')
 })
 
-console.log(dataBaseFilterMap)
+// console.log(dataBaseFilterMap)
