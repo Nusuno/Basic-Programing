@@ -976,6 +976,8 @@ const dataBaseFilterMap = dataBase.filter(function (elemant, index) {
         province: elemant.province,
         total_death: elemant.total_death
     })
+}) .filter(function(elemant, index){
+    return elemant.province.includes('กรุง')
 })
 
 console.log(dataBaseFilterMap)
