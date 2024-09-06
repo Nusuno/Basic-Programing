@@ -32,7 +32,7 @@
 //Java Script Object
 // me = Java Script Object
 const me = {
-    firstName: 'Nuttawut' , 
-    lastName: 'Chairit' , 
-    age: 20
+    firstName: 'สมปอง' , 
+    lastName: 'สนองบุญ' , 
+    age: 24
 }
