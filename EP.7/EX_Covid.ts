@@ -950,8 +950,15 @@ const dataBase = [
 ]
 
 
-const dataBaseDeath = dataBase.filter(function(elemant, index){
-    return elemant.total_death > 5
+const dataBaseDeath = dataBase.filter(function (elemant, index) {
+    return elemant.total_death > 5 && elemant.province !== 'ทั้งประเทศ'
 })
 
 console.log(dataBaseDeath)
+
+const dataBaseMap = dataBase.map(function (elemant, index) {
+    return ({
+        province: elemant.province,
+        total_death: elemant.total_death
+    })
+})
