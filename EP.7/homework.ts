@@ -467,7 +467,7 @@ const newsData = {
     "nextPage": "1725549180093213039"
 }
 
-const newsDataThai = newsData.results.filter(function(elemant, index){
+const thaiPbsNews = newsData.results.filter(function(elemant, index){
     return elemant.language === 'thai' && elemant.source_name === 'Thai Pbs News'
 }).map(function(elemant, index){
     return ({
@@ -480,4 +480,4 @@ const newsDataThai = newsData.results.filter(function(elemant, index){
 })
 
 
-console.log(newsDataThai)
+console.log(thaiPbsNews)
