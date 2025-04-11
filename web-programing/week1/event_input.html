@@ -21,17 +21,25 @@
     <h2>กรอกชื่อ</h2>
     <input type="text" placeholder="ช่องใส่ชื่อ" id="name-input">
     <input type="password" placeholder="ช่องใส่รหัส" id="pass-input">
-
     <h1 id="show-name">***</h1>
     <h1 id="show-pass">***</h1>
     <h1 id="show-color">เลือกสี</h1>
+    <h1 id="show-age">อายุ</h1>
     <select id="color-select">
         <option value="red">red</option>
         <option value="green">green</option>
         <option value="blue">blue</option>
-    </select>
-
+    </select><br>
+    <input type="number" id="age-input" placeholder="กรอกอายุ"><br>
     <script>
+        document.getElementById("age-input").addEventListener("input", function () {
+            const value = this.value
+            if (value < 20) {
+                alert("อายุไม่ถึง")
+            } else {
+                alert("อายุถึงแล้ว")
+            }
+        });
         document.getElementById("name-input").addEventListener("input", function () {
             const value = this.value
             document.getElementById("show-name").innerText = "สวัสดี : " + value;
