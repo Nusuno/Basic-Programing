@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Third Page</title>
+    <style>
+        html {
+            background-color: black;
+        }
+
+        #heading1 {
+            color: blue;
+            font-size: 50px;
+        }
+
+        p {
+            background-color: #f0f0f0;
+            border-style: double;
+            color: #333;
+            padding: 15px;
+        }
+
+        #heading2 {
+            color: blue;
+
+            font-size: 30px;
+        }
+
+        button {
+            color: white;
+            background-color: red;
+            font-size: large;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+
+<body>
+    <script>
+        function sayHello(name) {
+            alert("สวัสดี นี่คืองานเกี่ยวกับ Web-Programing ของ " + name);
+        }
+        function cheangeTitle() {
+            const title = document.getElementById("heading2"/*id*/);
+            title.innerHTML = "to my project";
+            title.style.color = "red";
+        }
+        function cheangeHeader() {
+            const header = document.getElementById("heading1");
+            header.innerHTML = "Welcome";
+            header.style.color = "red";
+        }
+        function cheangeImg() {
+            const img = document.getElementById("logo");
+            img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/2048px-Github-desktop-logo-symbol.svg.png";
+        }
+
+
+    </script>
+    <h1 id="heading1" class="center">ยินดีต้อนรับ</h1>
+    <h1 id="heading2" class="center">สู่งานของฉัน</h1>
+    <h2 class="center">
+        <button onclick="sayHello('Nuttawut')"><b>Click Me1</b></button>
+        <br>
+        <button onclick="sayHello('ณัฐวุฒิ')"><b>Click Me2</b></button>
+        <br>
+        <button onclick="cheangeHeader()"><b>เปลี่ยนหัวข้อ</b></button>
+        <br>
+        <button onclick="cheangeTitle()"><b>เปลี่ยนชื่อ</b></button>
+        <br>
+        <button onclick="cheangeImg()"><b>เปลี่ยนรูป</b></button>
+    </h2>
+
+    <p>นี่คือ Page ที่ 3 ในวิชา Web-Programing</p>
+    <br><img id="logo" src="https://avatars1.githubusercontent.com/u/9919?v=4" alt="github icon" width="200">
+    <br><a href="https://github.com/Nusuno">นี่คือ link github ของฉัน</a>
+</body>
+</head>
+
+</html>

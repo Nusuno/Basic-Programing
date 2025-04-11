@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        #show-name {
+            font-size: 30px;
+            color: red;
+        }
+
+        input {
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>กรอกชื่อ</h2>
+    <input type="text" placeholder="ช่องใส่ชื่อ" id="name-input">
+    <input type="password" placeholder="ช่องใส่รหัส" id="pass-input">
+
+    <h1 id="show-name">***</h1>
+    <h1 id="show-pass">***</h1>
+    <h1 id="show-color">เลือกสี</h1>
+    <select id="color-select">
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+    </select>
+
+    <script>
+        document.getElementById("name-input").addEventListener("input", function () {
+            const value = this.value
+            document.getElementById("show-name").innerText = "สวัสดี : " + value;
+        });
+        document.getElementById("pass-input").addEventListener("input", function () {
+            const value = this.value
+            document.getElementById("show-pass").innerText = "รหัส : " + value;
+        });
+        document.getElementById("color-select").addEventListener("change", function () {
+            const value = this.value
+            document.getElementById("show-color").innerText = "สีที่เลือก : " + value;
+            document.getElementById("show-color").style.color = value;
+        });
+    </script>
+</body>
+
+</html>
